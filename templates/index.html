@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS CRAWLER API</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='app/main.css')}}">
+</head>
+<body>
+    <div class="text-2xl text-white p-10 text-center mb-5 bg-blue-700 uppercase">News Crawler</div>
+    <div class="p-10">
+        <div class="text-center">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 items-center h-full text-center">
+                <a class="p-3 hover:shadow-md" href="/detik">
+                    <img class="h-12 shadow-sm mx-auto" src="{{url_for('static',filename='img/detik.png')}}" alt="detik">
+                </a>
+                <a class="p-3 hover:shadow-md" style="background:#0a0a0a;" href="/kompas">
+                    <img class="h-12 shadow-sm mx-auto" src="{{url_for('static',filename='img/kompas.png')}}" alt="kompas">
+                </a>
+                <a class="p-3 hover:shadow-md" href="/kumparan">
+                    <img class="h-12 shadow-sm mx-auto" src="{{url_for('static',filename='img/kumparan.webp')}}" alt="kumparan">
+                </a>
+                <a class="p-3 hover:shadow-md" style="background:#d81d18;" href="/prfm-news">
+                    <img class="h-12 shadow-sm mx-auto" src="{{url_for('static',filename='img/prfm.webp')}}" alt="prfm-news">
+                </a>
+                <a class="p-3 hover:shadow-md" href="/tempo">
+                    <img class="h-12 shadow-sm mx-auto" src="{{url_for('static',filename='img/tempo.jpg')}}" alt="tempo">
+                </a>
+                <a class="p-3 hover:shadow-md" href="/tribun">
+                    <img class="h-12 shadow-sm mx-auto" src="{{url_for('static',filename='img/tribun.svg')}}" alt="tribun">
+                </a>
+                <a class="p-3 hover:shadow-md" style="background:#cb211f;" href="/tvone-news">
+                    <img class="h-12 shadow-sm mx-auto" src="{{url_for('static',filename='img/tvone.webp')}}" alt="tvone-news">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
